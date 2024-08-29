@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.app-title{
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1vh;
+  margin-top: 5vh;
+}
+.app-addtodos{
+  background-color: #444444;
+  min-height: 10vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+.app-labels{
+  color: #FFFFFF;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.app-inputs{
+  height: 4vh;
+  width: 18vw;
+  margin-right: 2vw;
+  border: none;
+  border-radius: .5rem;
+  padding: 2px 5px;
+  font-size: 1vw;
+  margin-top: .5vh;
+}
+.app-button{
+  background-color: #FE9900;
+  height: 5vh;
+  width: 10vw;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.app-todos{
+width: 70vw;
+margin-top: 1vh;
+}
+
+.app-left{
+width: 45vw;
+}
+.app-eachtodo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 1.5vw;
+  background-color: #444444;
+  min-height: 8vh;
+  margin-bottom: .3vh;
+}
+.app-h1{
+  color: #FE9900;
+  font-size: 2.3vw;
+}
+.app-p{
+  color: #FFFFFF;
+  font-size: 1.2vw;
+}
+.app-eachtodo button{
+  height: 4vh;
+  width: 6vw;
+  font-size: 1vw;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+#complete-btn{
+  border: 3px solid #38584C;
+  color: #38584C;
+  margin-right: .7vw;
+}
+#update-btn{
+  border: 3px solid #FE9900;
+  color: #FE9900;
+  margin-right: .7vw;
+}
+#delete-btn{
+  border: 3px solid #cc4547;
+  color: #cc4547;;
+}
+.app-completedh1{
+  color: #706C6A;
+  text-decoration: line-through;
+  font-size: 2.3vw;
+}
+.app-completedp{
+  color: #706C6A;
+  text-decoration: line-through;
+  font-size: 1.2vw;
+}
+.app-empty{
+text-align: center;
+color: #FFFFFF;
+margin-top: 15vh;
+font-size: 3vw;
+}
+
+@media (width <= 900px) {
+  .app-h1{
+    font-size: 3vw;
+  }
+  .app-p{
+    font-size: 2vw;
+  }
+  .app-completedh1{
+    font-size: 3vw;
+  }
+  .app-completedp{
+    font-size: 2vw;
+  }
+  .app-inputs{
+    font-size: 2vw;
+    width: 25vw;
+  }
+  .app-labels{
+    font-size: 2vw;
+  }
+  .app-empty{
+    font-size: 6vw;
+  }
+  .app-addtodos{
+    width: 85vw;
+  }
+  .app-todos{
+    width: 85vw;
+  }
+}
+
+@media (width <= 500px ){
+  .app-h1{
+    font-size: 5vw;
+  }
+  .app-p{
+    font-size: 3vw;
+  }
+  .app-completedh1{
+    font-size: 5vw;
+  }
+  .app-completedp{
+    font-size: 3vw;
+  }
+  .app-addtodos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+  .app-inputs{
+    width: 40vw;
+    font-size: 4vw;
+  }
+  .app-labels{
+    font-size: 4vw;
+  }
+  .app-button{
+    height: 4vh;
+    width: 40vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 5vw;
+  }
+  .app-todos{
+    width: 100vw;
+  }
+  .app-eachtodo button{
+    width: 11vw;
+    font-size: 2vw;
+  }
+  .app-empty{
+   font-size: 10vw;
+  }
+}
